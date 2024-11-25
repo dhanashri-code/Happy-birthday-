@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head> 
+
+<meta charset="UTF-8"> 
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+<link rel="stylesheet" type="text/css" href="styles.css"> 
+
+
+<style>
+    
+    body{ 
+margin: 0; 
+padding: 0; 
+font-family: Arial, sans-serif;
+background-color: #f1f1f1; 
+} 
+
+.birthday-card { 
+text-align: center; 
+max-width: 400px; 
+margin: 80px auto; 
+padding: 20px; 
+background-color: #ffffff; 
+border-radius: 10px; 
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
+} 
+
+img { 
+width: 100%; 
+max-height: 200px; 
+object-fit: cover; 
+border-radius: 5px; 
+animation: fadeIn 2s ease infinite; 
+} 
+
+h1 { 
+font-size: 28px; 
+color: #456775; 
+margin-top: 20px; 
+animation: slideInLeft 1.5s ease infinite; 
+} 
+
+p { 
+font-size: 16px; 
+color: #687643; 
+margin-top: 10px; 
+animation: slideInRight 1.5s ease infinite; 
+} 
+
+@keyframes fadeIn { 
+
+  0% { 
+ opacity: 0; 
+ transform: scale(0.9); 
+  } 
+  
+  100% { 
+ opacity: 1; 
+ transform: scale(1); 
+ background-img:url("https://i.ibb.co/GVjJHkm/its-my-birthday-mohomed.jpg");}
+  } 
+  
+@keyframes slideInLeft {
+ 0% { 
+ opacity: 0; 
+ transform: translateX(-20px); 
+ } 
+ 100% { 
+ opacity: 1; 
+ transform: translateX(0); }
+  } 
+ 
+@keyframes slideInRight {
+ 0% { 
+ opacity: 0; 
+ transform: translateX(20px);
+  } 
+  
+ 100% { 
+ opacity: 1; 
+ transform: translateX(0); 
+ } 
+ 
+ } 
+ 
+ 
+.heart{
+    position:absolute ;
+    bottom:0;
+    animation:heart 10s infinite ease-in;
+}
+@keyframes heart{
+    0%{
+        bottom:100px;
+        transform:translateY  (0px);
+    }
+    50%{
+        bottom:400px;
+        transform:translateZ  (100px);
+    }
+    100%{
+        bottom:600px;
+        transform:translateX (-200px);
+    }
+}
+.heart:nth-child(1){
+    left:10%;
+    animation-duration:9s;
+}
+.heart:nth-child(2){
+    left:20%;
+    animation-duration:5s;
+    animation-delay:3s;
+}
+.heart:nth-child(3){
+    left:30%;
+    animation-duration:10s;
+    animation-delay:1s;
+}
+.heart:nth-child(4){
+    left:40%;
+    animation-duration:7s;
+    animation-delay:4s;
+}
+.heart:nth-child(5){
+    left:50%;
+    animation-duration:6s;
+    animation-delay:0s;
+}
+.heart:nth-child(6){
+    left:60%;
+    animation-duration:8s;
+    animation-delay:6s;
+}
+.heart:nth-child(7){
+    left:70%;
+    animation-duration:7s;
+    animation-delay:3s;
+}
+.heart:nth-child(8){
+    left:80%;
+    animation-duration:6s;
+    animation-delay:0s;
+}
+.heart:nth-child(9){
+    left:75%;
+    animation-duration:10s;
+    animation-delay:6s;
+}
+.heart:nth-child(10){
+    left:5%;
+    animation-duration:5s;
+    animation-delay:1s;
+}
+.heart:nth-child(11){
+    left:10%;
+    animation-duration:9s;
+}
+.heart:nth-child(12){
+    left:20%;
+    animation-duration:5s;
+    animation-delay:3s;
+}
+.heart:nth-child(13){
+    left:30%;
+    animation-duration:10s;
+    animation-delay:1s;
+}
+.heart:nth-child(14){
+    left:40%;
+    animation-duration:7s;
+    animation-delay:4s;
+}
+.heart:nth-child(15){
+    left:50%;
+    animation-duration:6s;
+    animation-delay:0s;
+}
+.heart:nth-child(16){
+    left:60%;
+    animation-duration:8s;
+    animation-delay:6s;
+}
+.heart:nth-child(17){
+    left:70%;
+    animation-duration:7s;
+    animation-delay:3s;
+}
+.heart:nth-child(18){
+    left:80%;
+    animation-duration:6s;
+    animation-delay:0s;
+}
+.heart:nth-child(19){
+    left:75%;
+    animation-duration:10s;
+    animation-delay:6s;
+}
+.heart:nth-child(20){
+    left:5%;
+    animation-duration:5s;
+    animation-delay:1s;
+}
+ 
+.ball {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 170px;
+    position: relative;
+}
+.ball > div {
+    width: 102px;height: 120px;
+    border-radius: 80% 80% 80% 80%;
+    margin: 50 auto;
+    position: absolute;
+    padding: 10px;
+    -webkit-transform-origin: bottom center;
+}
+
+.ball > div:nth-child(4),
+.ball > div:nth-child(5){
+    width: 105px;height: 150px;
+}
+.ball > div:nth-child(1) {
+    background: rgba(242, 112, 45, 1);
+    left: 0;
+    box-shadow: inset 10px 10px 10px rgba(242, 112, 45, 1);
+    animation: ball1 6s ease-in-out infinite;
+}
+
+.ball > div:nth-child(1):before {
+    color: rgba(242, 112, 45, 1);
+}
+
+.ball > div:nth-child(2) {
+    background: rgba(255, 255, 255, 255);
+    left: 120px;
+    box-shadow: inset 10px 10px 15px rgba(255, 255, 255, 255);
+    animation: ball2 6s ease-in-out infinite;
+}
+
+.ball > div:nth-child(2):before {
+    color: rgba(255, 255, 255, 255);
+}
+
+.ball > div:nth-child(3) {
+    background: hsl(100, 75%, 60%);
+    left: 240px;
+    color:red;
+    box-shadow: inset 10px 10px 10px hsl(100, 75%, 60%);
+    animation: ball4 6s ease-in-out infinite;
+}
+
+.ball > div:nth-child(3):before {
+    color: hsl(100, 75%, 60%);
+}
+
+.ball > div:nth-child(4) {
+    background: rgba(190, 61, 244, 0.9);
+    left: 21%;bottom: -650%;
+    box-shadow: inset 10px 10px 10px rgba(173, 14, 240, .9);
+    animation: ball1 5s ease-in-out infinite;
+}
+
+.ball > div:nth-child(4):before {
+    color: rgba(190, 61, 244, .9);
+}
+
+.ball > div:nth-child(5) {
+    background: rgba(180, 224, 67, .9);
+    right: 21%;bottom: -650%;
+    box-shadow: inset 10px 10px 10px rgba(158, 206, 34, .9);
+    animation: ball2 5s ease-in-out infinite;
+}
+
+.ball > div:nth-child(5):before {
+    color: rgba(180, 224, 67, .9);
+}
+
+.ball > div:before{
+    position: absolute;
+    bottom: -11px;left: 45px;
+    content: "▲";
+    font-size: 1rem;
+}
+
+span {
+    font-size: 5rem;
+    color: var(--white);
+    position: relative;
+    top: 1rem;left: 50%;
+    margin-left: -2rem;
+}
+
+div:nth-child(2) span{
+    color: rgba(182, 15, 97, 1);
+}
+
+div:nth-child(5) span{
+    color: rgba(242, 112, 45, 1);
+    font-size: 8rem;
+    top: -15px;
+}
+
+div:nth-child(4) span{
+    font-size: 8rem;
+    top: -15px;
+    color: rgba(22, 112, 45, 1);
+}
+
+@keyframes ball1 {
+    0%, 100% {
+    transform: translateY(0) rotate(-6deg);}
+    50% {transform: translateY(-20px) rotate(8deg);
+    }
+}
+
+@keyframes ball2 {
+    0%, 100% {
+    transform: translateY(0) rotate(6deg);
+    }
+    50% {
+    transform: translateY(-30px) rotate(-8deg);
+    }
+}
+
+@keyframes ball3 {
+    0%, 100% {
+    transform: translate(0, -10px) rotate(6deg);
+    }
+    50% {
+        transform: translate(-20px, 30px) rotate(-8deg);
+    }
+}
+
+@keyframes ball4 {
+    0%, 100% {
+    transform: translate(10px, -10px) rotate(-8deg);
+    }
+    50% {
+    transform: translate(-15px, 10px) rotate(10deg);
+    }
+}
+
+
+
+    
+    
+    
+    
+</style>
+
+<title>Birthday Wishes Card</title> 
+
+</head> 
+<body> 
+
+ <div class="ball">
+            <div><span>T</span></div>
+            <div><span>O</span></div>
+            <div><span>N</span></div>
+            <div><span>Y</span></div>
+            <div><span>24</span></div>
+        </div>
+<div class="birthday-card"> 
+
+<img src="https://thumbs.dreamstime.com/b/colorful-happy-birthday-cupcakes-candles-spelling-148323072.jpg" alt="Birthday Balloons" class="animate"> 
+
+<h1 class="animate">Happy Birthday!</h1> 
+
+<p class="animate">
+Wishing you a day filled with joy, laughter, and all the happiness in the world.
+</p> 
+
+</div>
+<audio id="audio" src="https://dl.dropbox.com/s/fuxny3560gcau50/happy-birthday-to-you-happy-birthday-songs-2021-wishesplus.com_.mp3?dl=0"></audio>
+
+<div class="hearts">
+            <div class="heart">❤️</div>
+            <div class="heart">❤️</div>
+            <div class="heart">❤️</div>
+            <div class="heart">❤️</div>
+            <div class="heart">❤️</div>
+            <div class="heart">❤️</div>
+            <div class="heart">❤️</div>
+            <div class="heart">❤️</div>
+            <div class="heart">❤️</div>
+            <div class="heart">❤️</div>
+            <div class="heart">❤️</div>
+            <div class="heart">❤️</div>
+            <div class="heart">❤️</div>
+            <div class="heart">❤️</div>
+            <div class="heart">❤️</div>
+            <div class="heart">❤️</div>
+            <div class="heart">❤️</div>
+            <div class="heart">❤️</div>
+            <div class="heart">❤️</div>
+            <div class="heart">❤️</div>
+        </div>
+        <script>
+            
+            window.addEventListener("click",play)
+function play(){
+    document.getElementById("audio").play();
+    
+  }
+
+console.log("click on screen");
+        </script>
+</body>
+
+</html>
